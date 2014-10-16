@@ -1,5 +1,56 @@
-/* your beautiful css styling goes here! */
 
-/* Note: an asteroid image is included in this repo. 
-Feel free to use it if you like. */
+      body {
+        background-color: #859164;
+      }
 
+      .container {
+        position: relative;
+        margin : 0 auto;
+        box-shadow: 0px 0px 10px rgba(0,0,0,1);
+        width: 1200px;
+      }
+
+      #scores {
+        padding: 10px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        background: #ddd;
+        text-align: right;
+        border-radius: 3px;
+      }
+      #scores span {
+        display: inline-block;
+        width: 50px;
+      }
+      .container {
+        background-image: url("background.png");
+        background-size: cover;
+        padding: 40px;
+        margin-top: 40px;
+        margin-bottom: 40px;
+      }
+
+      .rule line {
+        stroke: #eee;
+        shape-rendering: crispEdges;
+      }
+
+      .rule line.axis {
+        stroke: #000;
+      }
+
+      .line, image.area {
+        fill: none;
+        stroke: steelblue;
+        stroke-width: 1.5px;
+      }
+
+      image.area {
+        fill: #fff;
+      }
+      .enemy{
+        background-image: url("pokeball.gif");
+        background-size: cover;
+
+      }

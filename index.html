@@ -1,17 +1,27 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <link rel='stylesheet' type='css' href='styles.css'> 
+    <link rel='stylesheet' type='css' href='styles.css'>
   </head>
   <body>
-    <div class="scoreboard">
-      <!-- Modify the scoreboard when important events occur in your game! -->
-      <div class="high">High score: <span>0</span></div>
-      <div class="current">Current score: <span>0</span></div>
-      <div class="collisions">Collisions: <span>0</span></div>
-    </div>
-    <script src="d3.js" charset="utf-8"></script>
+  <iframe width="100%" height="75" scrolling="no" frameborder="no" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/61856063&amp;auto_play=true&amp;hide_related=false&amp;show_comments=true&amp;show_user=true&amp;show_reposts=false&amp;visual=true"></iframe>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.2/underscore-min.js"></script>
+   <script src="d3.js" charset="utf-8"></script>
     <script src='vid.js'></script>
-    <script src='watchout.js'></script>
+      <div class='container'>
+          <h1>Escape!</h1>
+          <h3>Don't get caught!</h3>
+          <div id='scores'>
+            <h3>High Score: <span id='best-score'></h3>
+            <h3>Current Score: <span id='current-score'></h3>
+          </div>
+          <svg z-index= "-1">
+            <defs>
+                <pattern id="img1" patternUnits="userSpaceOnUse" width="50" height="50">
+                </pattern>
+            </defs>
+          </svg>
+      </div>
   </body>
+  <script src='watchout.js'></script>
 </html>
